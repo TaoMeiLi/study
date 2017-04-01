@@ -1,0 +1,49 @@
+<!doctype html>
+<html data-user-width="750">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="author" content="陶美利,taomeili92@163.com">
+	<title></title>
+	<script src="jquery-2.1.4.js"></script>
+	<script>
+		$("body").on("change", "#file0", function (e) {
+           	upimg();
+		})
+		function upimg(){
+			var formData = new FormData($("#form0")[0]);
+			$.ajax({
+	                url: '',
+	                type: 'POST',
+	                data: formData,
+	                async: false,
+	                cache: false,
+	                dataType: "json",
+	                contentType: false,
+	                processData: false,
+	                success: function (returndata) 
+	                    oUrl = returndata.data.url;
+//	                    oPath = returndata.data.path;
+						$("#img").attr("src",oUrl);
+	                    
+		            },
+	                error: function (returndata) {
+	                }
+	           });
+		}
+		
+	</script>
+</head>
+<body>	
+	<form action="" id="form0" name="form0" ">
+        <input id="file0" type="file" name="profile" value="" onchange="upimg()"／>
+        <input id="subm-btn" type="button" name="dosubmit"  value="提交" onclick="upimg()">
+    </form>
+    <img src="" alt="" id="img" />
+</body>
+</html>

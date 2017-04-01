@@ -1,0 +1,55 @@
+<!doctype html>
+<html data-user-width="750">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="author" content="陶美利,taomeili92@163.com">
+	<title></title>
+	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="js/underscore.js"></script>
+	<body>
+	    <div class="main"></div>
+	</body>
+	<script>
+	    $(function(){
+	    		$.ajax({
+	    			url: 'shops.json',
+	    			type: 'POST',
+	    			dataType: 'json',
+	    			success: function(response){
+	    				var html=_.template($("#tpl").text());
+	        			$(".main").append(html(response.result));
+	    			}
+	    		})
+//	        var data = [
+//	        		{
+//	        			name:'a',
+//	        			age: '12'
+//	        		},
+//	        		{
+//	        			name:'b',
+//	        			age: '30'
+//	        		},
+//	        		{
+//	        			name:'c',
+//	        			age: '23'
+//	        		}];
+	      
+	    });
+	</script>
+	<script type="text/template" id="tpl">
+	    <%_.each(obj,function(e,i){%>
+	    <ul>
+	        <li>
+	        		<span>名字：<%= e.name%></span>
+	        		<span>ID：<%= e.id%></span>
+	        </li>
+	    </ul>
+	    <%})%>
+	</script>
+</html>

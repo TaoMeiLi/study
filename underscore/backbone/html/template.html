@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script src="../js/jquery-2.1.4.js"></script>
+		<script src="../js/underscore.js"></script>
+		<script src="../js/backbone.js"></script>
+		<script>
+			$(function(){
+				var url = $(".tab").data('json');
+				var uid,lists;
+				$.ajax({
+					url: url,
+					type: 'GET',
+					dataType: 'json',
+					data: '',
+					success: function(respone){
+						if(respone.errcode){
+							alert(respone.errmsg);
+						}else{
+							uid = respone.result.uid;
+							var item = respone.result.ableInvioce;
+							var html = _.template($('#item-tem').text())({data:item});
+							$(".item-body").append(html);
+						}
+					}
+				});
+				$("body").on("click",".check", function(){
+					var mid = $(this).data('mid');
+					$.ajax({
+						type:"get",
+						url: url,
+						data: {
+							uid: uid,
+							moneyId: mid
+						},
+						success: function(response){
+							lists = {};
+							for(var i in response.result.ableInvioce){
+								var items = response.result.ableInvioce[i];
+								lists[items.moneyId] = items;
+							}
+							var html = _.template($('#lists').text())({data:lists[mid].history});
+							
+							$(".item-list").html(html);
+						}
+					});
+				})
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div class="tab" data-json = '../json/invoice_list.json'></div>
+		<div class="item-body"></div>
+		<script type="text/template" id="item-tem">
+			<%_.each(data,function(n){ %>
+				<div>
+					<span><%= n.moneyId %></span>
+					<span><%= n.date %></span>
+					<span><%= n.money %></span>
+					<span><%= n.opended %></span>
+					<span><%= n.noOpen %></span>
+					<input class="check" type="button" value="查看" data-mid=<%= n.moneyId %> />
+				</div>
+			<%})%>
+		</script>
+		<div class="item-list"></div>
+		<script type="text/template" id="lists">
+			<%_.each(data,function(n){%>
+				<div>
+					<span><%= n.openDate%></span>
+					<span><%= n.openMoney%></span>
+					<span><%= n.openName%></span>
+				</div>
+			<%})%>
+		</script>
+	</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			#tab .list li{width:100%;text-align: center;margin:0 auto;list-style: none;border:1px solid #ccc;}
+			#tab .list li span{display: inline-block;width:15%;height:25px;line-height: 25px;}
+			.ss{display:inline-block;height:40px;width:200px;padding:5px;border:1px solid #fac;}
+		</style>
+		<script src="js/underscore.js"></script>
+
+		<script src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var url, lisJson, itemJson, uid = 7845222, mId;
+				url = $('#tab').data('json');
+				$.ajax({
+					url: url,
+					type: 'GET',
+					dataType: 'json',
+					data: {
+						uid: uid
+					},
+					success: function(response) {
+						if (response.errcode) {
+							alert(response.errmsg);
+						} else {
+							lisJson = response.result.ableInvioce;
+							var html = _.template($("#tpl").text())({data:lisJson});
+							$(".list").append(html);
+						}
+					}
+				});
+				
+				
+				$('#tab').on("click", '.check', function(){
+					mId = $(this).data('mid');
+					$.ajax({
+						url: url,
+						type: 'GET',
+						dataType: 'json',
+						data: {
+							uid: uid,
+							moneyId: mId
+						},
+						success: function (response) {
+							if (response.errcode) {
+								alert(response.errmsg);
+							} else {
+								itemJson = {};
+								for (var i in response.result.ableInvioce) {
+									var items = response.result.ableInvioce[i];
+									 itemJson[items.moneyId] = items;
+					            }
+					            var html = _.template($('#record').text())({item:itemJson[mId].history});
+								
+//								var html = _.template($('#record').text())({item: itemJson[items.mId].history})
+								$('#check-tab').html(html);
+							}
+						}
+					})
+				});
+			})
+			
+			
+		</script>
+	</head>
+	<body>
+
+		<div id="tab" data-json='json/invoice_list.json'>
+			<ul class="list">
+				<li>
+					<span>moneyId</span>
+					<span>date</span>
+					<span>money</span>
+					<span>opended</span>
+					<span>noOpen</span>
+					<span>状态</span>
+				</li>
+			</ul>
+		</div>
+		
+		<script type="text/template"  id="tpl">
+		<%_.each(data,function(n){%>
+			<li class="item">
+				<span><%= n.moneyId %></span>
+				<span><%= n.date %></span>
+				<span><%= n.money %></span>
+				<span><%= n.opended %></span>
+				<span><%= n.noOpen %></span>
+				<span>
+					<input class="check" data-mid=<%= n.moneyId %> type="button" value="查看" />
+				</span>
+			</li>
+		<%})%>
+		</script>
+		<div>
+			<div>
+				<span class="ss">时间</span>
+				<span class="ss">金额</span>
+				<span class="ss">操作员</span>
+			</div>
+			<div id="check-tab"></div>
+		</div>
+		<script type="text/template"  id="record">
+		<%_.each(item,function(n){%>
+			<div class="record-list">
+				<span class="ss"><%= n.openDate %></span>
+				<span class="ss"><%= n.openMoney %></span>
+				<span class="ss"><%= n.openName %></span>
+			</div>
+		<%})%>
+		</script>
+	</body>
+</html>

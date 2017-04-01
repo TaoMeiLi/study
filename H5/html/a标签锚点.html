@@ -1,0 +1,44 @@
+<!doctype html>
+<html data-user-width="750">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="author" content="陶美利,taomeili92@163.com">
+	<title></title>
+	<style>
+		nav a{display:inline-block;width:100px;height:40px;border:1px solid red;}
+		h3{width:100%;height:600px;background:pink;border:1px solid red;margin:10px;}
+	</style>
+	<script>	
+		function here(){
+			document.getElementById('here').scrollIntoView(false);
+		}
+	</script>
+</head>
+<body>	
+	<div class="main">
+		<li class="" onclick="here()">here</li> 
+		
+		<nav>
+			<a href="#d1">1</a>
+			<a href="#d2">a</a>
+			<a href="#d3">3</a>
+			<a href="#d4">4</a>
+		</nav>
+		<article>
+			<a name="d1"><h3>我是d1</h3></a>
+			<a name="d2"><h3>我是d2</h3></a>
+			<a id="here"><h3>here</h3></a>
+			<a name="d4"><h3>我是d4</h3></a>
+			
+		</article>
+		
+	</div>
+    
+</body>
+</html>

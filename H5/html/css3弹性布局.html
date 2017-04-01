@@ -1,0 +1,47 @@
+<!doctype html>
+<html data-user-width="750">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="author" content="陶美利,taomeili92@163.com">
+	<title></title>
+	<style>
+		*{margin:0;padding:0;list-style: none;}
+		 .main{width:100%;background:black;}
+		 ul{display: flex;}
+		 ul li{flex:1;background:yellow;margin:10px;}
+		 
+		 @media all and(max-width: 800px) {
+		 	ul{flex-direction: column;}
+		 	ul li{background:pink;}
+		 	
+		 }
+		 .tab{width:100%;background:pink;display: flex;}
+		 .tab aside:first-child,.tab aside:last-child{width:100px;height:100px;border:1px solid #000000;}
+		 .tab aside:nth-child(2){flex:1;background:yellow;}
+	</style>
+</head>
+<body>	
+   <div class="main">
+   		<ul>
+   			<li>www</li>
+   			<li>www</li>
+   			<li>www</li>
+   		</ul>
+   </div>
+   <div class="tab">
+   		<aside></aside>
+   		<aside></aside>
+   		<aside></aside>
+   </div>
+   <div class="tab">
+   		<aside></aside>
+   		<aside></aside>
+   </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../../H5/jquery-2.1.4.js"></script>
+	</head>
+	<body>
+		<div class="main"></div>
+	</body>
+	<script>
+		var str = ['tao', 'mei', 'li'];
+		$(".main").append('<h1>'+str[0]+'</h1>');
+		$(".main").append(`<h1>${str[1]}</h2>`);//es6语法
+
+		function animal(type){
+		    type = type || 'cat';
+		    console.log(type);
+		}
+		animal();
+		function anima(type = 'cat'){
+			console.log(type);
+		}
+		anima();
+		function anim(...types){
+			console.log(types);
+		}
+		anim('cat','hhh');
+		
+	</script>
+</html>

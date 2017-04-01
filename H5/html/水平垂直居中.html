@@ -1,0 +1,42 @@
+<!doctype html>
+<html data-user-width="750">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="author" content="陶美利,taomeili92@163.com">
+	<title></title>
+	<style>
+		.box{width:200px;height:200px;background:pink;margin:20px;float:left;}
+		.method-1,.method-2{position:relative;}
+		.tab1{width:100px;height:100px;background:yellow;position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;}
+		.tab2{width:100px;height:100px;background:yellow;position:absolute;top:50%;left:50%;margin:-50px 0 0 -50px;}
+		.method-3,.method-4{display: flex;}
+		.tab3{margin:auto;width:100px;height:100px;background:yellow;}
+		.tab4{margin:auto;background:yellow;}
+		.method-5{display:table;text-align: center;}
+		.tab5{display: table-cell;background:yellow;vertical-align: middle;}
+	</style>
+</head>
+<body>	
+    <div class="box method-1">
+    		<div class="tab1">固定宽高1</div>
+    </div>
+    <div class="box method-2">
+    		<div class="tab2">固定宽高2</div>
+    </div>
+     <div class="box method-3">
+    		<div class="tab3">固定宽高3</div>
+    </div>
+    <div class="box method-4">
+    		<div class="tab4">不固定宽高1</div>
+    </div>
+    <div class="box method-5">
+    		<div class="tab5">不固定宽高2</div>
+    </div>
+</body>
+</html>

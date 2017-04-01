@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-2.1.4.js"></script>
+		<script src="js/underscore.js"></script>
+		<script src="js/backbone.js"></script>
+		<script src="../jquery/js/bootstrap.min.js"></script>
+		<script>
+			
+//			var obj = _.extend({'a':1,'b':3,'c':4},{'b':2});//复制后者的属性覆盖给前者
+//			var tabAlert = _.clone(object);//复制对象或者数组
+//			object.trigger('alert','hhhhhh');//trigger 执行方法‘alert’可以传参
+
+	//事件
+//			var object = {};
+//			_.extend(object, Backbone.Events);
+//			object.on('alert',function(msg){
+//				alert("this is" + msg);
+//			});
+//			object.trigger('alert','ok);
+		
+	//模型创建
+		var Sidebar = Backbone.Model.extend({
+		  	initialize: function(){
+		  		title: 'made models',
+		  		author: 'taomeili'
+		  	}
+		});
+		var sidebar = new Sidebar;
+		alert(sidebar.get(title));
+		
+		
+		
+		
+		</script>
+	</head>
+	<body>
+		<div>tab</div>
+		<div id="sidebar" style="background:#fac;">promptColor</div>
+	</body>
+</html>

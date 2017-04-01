@@ -1,0 +1,171 @@
+{
+	"errcode": 0,
+	"errmsg": "",
+	"returnurl": "",
+	"result": {
+	  "uid": 7845222,
+	  "ableInvioce": [
+		{
+		  "moneyId": 1,
+		  "date": "2014-06-05",
+		  "money": 2000.00,
+		  "opended": 0.00,
+		  "noOpen": 2000.00,
+		  "history": [
+        {
+          "openDate": "2014-05-30",
+          "openMoney": 100.00,
+          "openName": "忆1"
+        },
+        {
+          "openDate": "2014-05-29",
+          "openMoney": 150.00,
+          "openName": "忆1"
+        }
+		  ]
+		},
+		{
+		  "moneyId": 2,
+		  "date": "2014-06-04",
+		  "money": 2000.00,
+		  "opended": 1000.00,
+		  "noOpen": 1000.00,
+		  "history": [
+        {
+          "openDate": "2014-05-30",
+          "openMoney": 100.00,
+          "openName": "2"
+        },
+        {
+          "openDate": "2014-05-29",
+          "openMoney": 150.00,
+          "openName": "2"
+        },
+        {
+          "openDate": "2014-05-28",
+          "openMoney": 100.00,
+          "openName": "2"
+        },
+        {
+          "openDate": "2014-05-22",
+          "openMoney": 200.00,
+          "openName": "2"
+        }]
+		},
+		{
+		  "moneyId": 3,
+		  "date": "2014-06-03",
+		  "money": 2000.00,
+		  "opended": 1000.00,
+		  "noOpen": 1000.00,
+		  "history": [
+        {
+          "openDate": "2014-05-30",
+          "openMoney": 100.00,
+          "openName": "忆3"
+        },
+        {
+          "openDate": "2014-05-29",
+          "openMoney": 150.00,
+          "openName": "忆3"
+        },
+        {
+          "openDate": "2014-05-28",
+          "openMoney": 100.00,
+          "openName": "忆3"
+        },
+        {
+          "openDate": "2014-05-22",
+          "openMoney": 200.00,
+          "openName": "忆3"
+        }]
+		},
+		{
+		  "moneyId": 4,
+		  "date": "2014-06-02",
+		  "money": 2000.00,
+		  "opended": 1000.00,
+		  "noOpen": 1000.00,
+		  "history": [
+        {
+          "openDate": "2014-05-30",
+          "openMoney": 100.00,
+          "openName": "忆4"
+        },
+        {
+          "openDate": "2014-05-29",
+          "openMoney": 150.00,
+          "openName": "忆4"
+        }]
+		},
+		{
+		  "moneyId": 5,
+		  "date": "2014-06-01",
+		  "money": 2000.00,
+		  "opended": 1000.00,
+		  "noOpen": 1000.00,
+		  "history": [
+        {
+          "openDate": "2014-05-30",
+          "openMoney": 100.00,
+          "openName": "忆5"
+        },
+        {
+          "openDate": "2014-05-29",
+          "openMoney": 150.00,
+          "openName": "忆5"
+        },
+        {
+          "openDate": "2014-05-28",
+          "openMoney": 100.00,
+          "openName": "忆5"
+        },
+        {
+          "openDate": "2014-05-22",
+          "openMoney": 200.00,
+          "openName": "忆5"
+        },
+        {
+          "openDate": "2014-05-20",
+          "openMoney": 100.00,
+          "openName": "忆5"
+        },
+        {
+          "openDate": "2014-05-19",
+          "openMoney": 150.00,
+          "openName": "忆5"
+        },
+        {
+          "openDate": "2014-05-10",
+          "openMoney": 100.00,
+          "openName": "忆5"
+        },
+        {
+          "openDate": "2014-05-05",
+          "openMoney": 100.00,
+          "openName": "忆5"
+        }
+		  ]
+		},
+		{
+		  "moneyId": 6,
+		  "date": "2014-05-31",
+		  "money": 2000.00,
+		  "opended": 1000.00,
+		  "noOpen": 1000.00,
+		  "history": [
+        {
+          "openDate": "2014-05-30",
+          "openMoney": 100.00,
+          "openName": "忆6"
+        },
+        {
+          "openDate": "2014-05-29",
+          "openMoney": 150.00,
+          "openName": "忆6"
+        }
+		  ]
+		}
+	  ]
+	}
+}

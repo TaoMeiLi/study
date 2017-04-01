@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="com.css" />
+		<style type="text/css">
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			
+			table tr>* {
+				width: 100px;
+				text-align: center;
+				border: 1px solid #000;
+			}
+			
+			table tr td {
+				height: 50px;
+			}
+			
+			table tr .pre {
+				color: blue;
+			}
+			
+			table tr .next {
+				color: red;
+			}
+			
+			h2{
+				width: 700px;
+				text-align: center;
+				padding: 15px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<h2></h2>
+		<div id="MyDate"></div>
+
+		<script type="text/javascript">
+			function MyDate(options) {
+				if(!options.el) {
+					return false;
+				}
+
+				var oDate = new Date();
+				var year = oDate.getFullYear();
+				var month = oDate.getMonth();
+
+				if(!options.nowDate) {
+					options.nowDate = year + "-" + (month + 1);
+				}
+				
+				year = parseInt(options.nowDate.split("-")[0]);
+				month = parseInt(options.nowDate.split("-")[1]);
+				
+				if(options.nowDate) {
+					//判断是否小于最小值
+					if(options.minDate) {
+						if(year < parseInt(options.minDate.split("-")[0])) {
+							year = options.minDate.split("-")[0];
+							month = options.minDate.split("-")[1];
+						} else if((year == parseInt(options.minDate.split("-")[0])) && (month < parseInt(options.minDate.split("-")[1]))) {
+							year = options.minDate.split("-")[0];
+							month = options.minDate.split("-")[1];
+						}
+					}
+					//判断是否大于最大值
+					if(options.maxDate) {
+						if(year > parseInt(options.maxDate.split("-")[0])) {
+							year = options.maxDate.split("-")[0];
+							month = options.maxDate.split("-")[1];
+						} else if((year == parseInt(options.maxDate.split("-")[0])) && (month > parseInt(options.maxDate.split("-")[1]))) {
+							year = options.maxDate.split("-")[0];
+							month = options.maxDate.split("-")[1];
+						}
+					}
+				}
+
+				this.YY = parseInt(year);
+				this.MM = parseInt(month)-1;
+				this.DD = oDate.getDate();
+
+				oDate.setFullYear(this.YY, this.MM, 1);
+				//当月1号星期
+				this.firstDay = oDate.getDay();
+				this.lastDate = 0;
+				//上个月天数
+				oDate.setDate(0);
+				this.preLastDate = oDate.getDate();
+
+				//循环次数
+				this.x = 7;
+				this.y = 6;
+
+				this.init(options);
+			}
+
+			MyDate.prototype.init = function(options) {
+				this.createdTable(options);
+				this.setLastDate(options);
+				this.fillDate(options);
+			}
+
+			MyDate.prototype.createdTable = function(options) {
+				var oTable = document.createElement("table");
+				oTable.innerHTML = "<thead>" +
+					"<tr>" +
+					"<th>星期日</th>" +
+					"<th>星期一</th>" +
+					"<th>星期二</th>" +
+					"<th>星期三</th>" +
+					"<th>星期四</th>" +
+					"<th>星期五</th>" +
+					"<th>星期六</th>" +
+					"</tr>" +
+					"</thead>" +
+					"<tbody></tbody>";
+				document.querySelector(options.el).appendChild(oTable);
+			}
+
+			MyDate.prototype.setLastDate = function(options) {
+				if((this.MM == 0) || (this.MM == 2) || (this.MM == 4) || (this.MM == 6) || (this.MM == 7) || (this.MM == 9) || (this.MM == 11)) {
+					this.lastDate = 31;
+				} else if(this.MM != 1) {
+					this.lastDate = 30;
+				} else if(this.MM == 1) {
+					this.YY % 4 ? this.lastDate = 28 : this.lastDate = 29;
+				}
+			}
+
+			MyDate.prototype.fillDate = function(options) {
+				var disDate = this.firstDay;
+				var con = 1;
+
+				var content = document.querySelector(options.el + " tbody");
+				content.innerHTML = "";
+				for(var i = 0; i < this.y; i++) {
+					var oTr = document.createElement("tr");
+
+					for(var j = 0; j < this.x; j++) {
+						if(con <= disDate) {
+							oTr.innerHTML += "<td class='pre'>" + (this.preLastDate + (con - disDate)) + "</td>";
+						} else if(con > (this.lastDate + disDate)) {
+							oTr.innerHTML += "<td class='next'>" + (con - (this.lastDate + disDate)) + "</td>";
+						} else {
+							oTr.innerHTML += "<td class='cur'>" + (con - disDate) + "</td>";
+						}
+						con++;
+
+						if((i >= this.y - 1) && (j >= this.x - 1)) {
+							options.callback && options.callback(this.YY+"-"+(this.MM+1));
+						}
+					}
+					content.appendChild(oTr);
+				}
+
+			}
+
+			new MyDate({
+				el: "#MyDate",
+				nowDate: "2016-12",
+				maxDate: "2017-7",
+				minDate: "2016-10",
+				callback: function(date) {
+					document.querySelector("h2").innerHTML=date;
+				}
+			});
+		</script>
+	</body>
+
+</html>

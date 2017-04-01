@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+//			var m = new Map();
+			var m = new Map([['a', 20],['b', 23],['c', 19]]);
+			console.log(m);
+			console.log(m.set('a',100));
+			console.log(m.has('a'));
+			m.delete('a');
+			console.log(m);
+			m.get('b');
+			console.log(m.get('b'));
+			console.log(m.get('a'));
+			
+//			var s = new Set();
+			var s = new Set([1,2,3,4,5,5]);
+			console.log(s);//[1,2,3,4,5]自动去重/长度是5
+//filter()它用于把Array的某些元素过滤掉，然后返回剩下的元素。
+			//输出奇数
+			var str = [1,2,3,4,5,6,6,6,6,7,8,9];
+			var f = str.filter(function(x){
+				return x % 2 !== 0;
+			})
+			console.log(f);
+			//去除空字符
+			var str1 = ['A', '', 'B', null, undefined, 'C', '  '];
+			var f1 = str1.filter(function(s){
+				console.log(typeof String.prototype.trim);
+				return s && s.trim();//trim()去空格ie9以下不兼容
+			})
+			console.log(str1);
+			console.log(f1);
+			//去重  indexof()总返回元素第一次出现时候的index值
+			var r = str.filter(function(element, index, self){
+				return self.indexOf(element)==index;
+				
+			})
+			console.log(r);
+			
+//reduce()
+			var r = [1,4,3];
+			//求和求面积
+			ss = r.reduce(function(x,y){
+//				return x+y;
+				return x*y;
+			})
+			console.log(ss);
+			var str2 = [1,5,6,7];
+			console.log(parseInt(str2));
+
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

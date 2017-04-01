@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../../H5/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				'use strick';
+				
+				//Array.from()伪数组转化成数组
+				var a1 = Array.from('hello');
+				console.log(a1);//["h", "e", "l", "l", "o"]
+				var a2 = Array.from([1, 2, 3], (x) => x * x);
+				console.log(a2);//[1, 4, 9]
+				var a3 = Array.from(a2).map(x => x*x);
+				console.log(a3);
+				//如果浏览器不支持from 则可用Array.prototype.slice方法替代（如下）
+				const toArray = (() =>
+					Array.from ? Array.from : obj => [].slice.call(obj)
+				)();
+				console.log(toArray('hello'));//["h", "e", "l", "l", "o"]
+				var a4 = Array(2);
+				var a5 = Array.of(2);
+				console.log(a4);//a4是长度为2的空数组
+				console.log(a5);//a5是长度为1 的数组[2]
+				
+				var a6 = [1,2,3,4,5,6,7];
+//				console.log(a6.copyWithin(0,4,5));
+				var a7 = a6.find(function(value, index, arr){
+					return value<7;
+				});
+				console.log(a7);
+//				var a8 = a6.findIndex(function(x){
+//					return x<4;
+//				});
+//				console.log(a8);
+				console.log([1,2,3].includes(2));//返回布尔值，
+			})
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

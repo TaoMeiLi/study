@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-2.1.4.js"></script>
+		<script src="../js/underscore.js"></script>
+		<script src="../js/backbone.js"></script>
+		<script>
+			var object = {};
+
+			_.extend(object, Backbone.Events);
+			
+			object.on("alert", function(msg) {
+				
+			 	 alert("Triggered " + msg);
+			});
+			
+			object.trigger("alert", "an event");
+			var col = _.clone(Backbone.Events);
+			console.log(col);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

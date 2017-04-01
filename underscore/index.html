@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="underscore.js"></script>
+		<script src="jquery-2.1.4.js"></script>
+		<script type="text/javascript">
+	
+		'use strict'
+			var str = [1,2,3,6,1,2,6,9,12,0,26],
+				str2 = [1,[2,[3,[4]],[5],[6]],9],
+				str3 = ['a','b','c','d'],
+				str4 = [1,3,5,6];
+			var s1 = _.first(str);
+			var s2 = _.last(str);
+			var s3 = _.flatten(str2);
+			var s4 = _.zip(['a','b','c','d'],['1','3','5','0']);
+			var s5 = _.unzip([['Adam', 85], ['Lisa', 92], ['Bart', 59]]);
+			var s6 = _.object(str3,str4);
+			var s7 = _.range(1,5);//生成一个从1开始的小于5的序列
+			var s8 = _.range(1,100,10);//生成一个从1开始的小于100的序列，数间隔10
+			var s9 = _.range(-1,-100,-10);//生成一个从-1开始的大于-100的序列，数间隔-10
+			
+			var s10 = _.once(function(){  //s10方法执行且只执行1次；无论用户点击多少次
+				alert('s10');
+			});
+			
+			
+			var s11 = function(){
+				alert("s11");
+			}
+			//_.delay(s11,10000);//10秒以后再执行方法s11;
+			var s12 = {
+				'a':1,
+				'b':2,
+				'c':3,
+				'd':4,
+				'e':5
+			}
+			console.log('s12的key='+_.keys(s12));//_.keys输出s12所有的key;但不包含从原型链继承下来
+											//_.allkeys 输出所有的key;包含从原型链继承下来
+			console.log('s12的value='+_.values(s12));
+			
+			var s13 = { a: 1, b: 2, c: 3 };
+//			// 注意传入的函数签名，value在前，key在后:
+			var ss13 = _.mapObject(s13,function(v,k){
+				return 100+v;
+			})
+			//console.log(ss13);//{a: 101, b: 102, c: 103}
+			var s14 = {'a':1,'b':2,'c':4};
+			var ss14 = _.invert(s14);
+			//console.log(ss14);//{1: "a", 2: "b", 4: "c"}
+			
+			var s15 = {
+				'q':11,
+				'a':12
+			}
+			console.log(_.extend(s13,s15));//{a: 12, b: 2, c: 3, q: 11}合并object如果有相同的key后者覆盖前者；
+			
+			console.log(_.clone(s15));//{q: 11, a: 12}克隆s15 包括所以属性
+			
+			console.log(_.isEqual(s15,s13));//false 深度比较两个object，相等返回true;***通用可以比较数组；
+			
+			
+			console.log('s1='+s1);//1
+			console.log('s2='+s2);//26
+			console.log('s3='+s3);//1,2,3,4,5,6,9
+			console.log('s4='+s4);
+			console.log('s5='+s5);
+			console.log('s6='+s6);
+			console.log('s7='+s7);//s7=1,2,3,4
+			console.log('s8='+s8);//s8=1,11,21,31,41,51,61,71,81,91
+			console.log('s9='+s9);//s9=-1,-11,-21,-31,-41,-51,-61,-71,-81,-91
+			
+			
+			
+			
+            
+		</script>
+		
+	</head>
+	<body>
+		<div class="main">
+			<input type="button" value="s10" onclick="s10()"/>
+			
+		</div>
+	</body>
+</html>
