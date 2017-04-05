@@ -4,9 +4,9 @@
 		<meta charset="UTF-8">
 		<title></title>
 		
-		<script src="../js/jquery-2.1.4.js"></script>
-		<script src="../js/underscore.js"></script>
-		<script src="../js/backbone.js"></script>
+		<script src="../js/public/jquery-2.1.4.js"></script>
+		<script src="../js/public/underscore.js"></script>
+		<script src="../js/public/backbone.js"></script>
 		<script>
 			$(function(){
 				var url = $(".tab").data('json');
@@ -53,7 +53,7 @@
 		</script>
 	</head>
 	<body>
-		<div class="tab" data-json = '../json/invoice_list.json'></div>
+		<div class="tab" data-json = '../../json/invoice_list.json'></div>
 		<div class="item-body"></div>
 		<script type="text/template" id="item-tem">
 			<%_.each(data,function(n){ %>

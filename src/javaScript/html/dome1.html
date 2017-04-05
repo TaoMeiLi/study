@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="author" content="陶美利,taomeili92@163.com">
+		<title></title>
+		<script type="text/javascript">
+			"use strict";
+			var str = 'hello';
+			var Array = ['h','e','30','X','和'];
+			console.log(str.toUpperCase());
+			console.log(str.toLowerCase());
+			console.log(str.indexOf('h'));//指定字符串首次出现的位置；
+			console.log(Array.indexOf('30'));
+			
+			console.log(str.substring(0,3));//返回下标是0-3的字符串；不包含下标3
+			console.log(Array.slice(0,3));//返回下标是0-3的数组；不包含下标3
+			console.log(Array.slice(3));//返回从下标3开始到最后的，包含下标3，如果为空，返回所有
+			console.log(Array.push('后'));//数组最后添加，返回length
+			console.log(Array.unshift('前'));//数组前添加，返回length
+			console.log("Array="+Array);
+			console.log(Array.pop());//删除最后一个元素，并返回删除的元素
+			console.log(Array.shift());//删除第一个元素，并返回删除的元素
+			
+			//排序
+			var ArrayN = [1,6,4,2,9,10,3];
+			console.log(ArrayN.sort());//默认按照  字符编码  的顺序进行排序[1, 10, 2, 3, 4, 6, 9]
+			console.log(ArrayN.sort(min));//[1, 2, 3, 4, 6, 9, 10]
+			console.log(ArrayN.sort(man));//[10, 9, 6, 4, 3, 2, 1]
+			console.log(ArrayN.reverse());//数组反转[1, 2, 3, 4, 6, 9, 10]
+			function min(x,y){
+				return x-y;
+			};
+			function man(x,y){
+				return y-x;
+			}
+			console.log(Array);
+			console.log(Array.splice(2,4,'oo','hh'));//删除下标2-4（包含4）,被'oo','hh'替换，返回删除的2-4
+			console.log(Array);
+			
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

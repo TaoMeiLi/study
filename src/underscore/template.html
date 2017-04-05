@@ -10,7 +10,6 @@
 			.ss{display:inline-block;height:40px;width:200px;padding:5px;border:1px solid #fac;}
 		</style>
 		<script src="js/underscore.js"></script>
-
 		<script src="js/jquery-2.1.4.js"></script>
 		<script type="text/javascript">
 			$(function(){
@@ -55,7 +54,6 @@
 									 itemJson[items.moneyId] = items;
 					            }
 					            var html = _.template($('#record').text())({item:itemJson[mId].history});
-								
 //								var html = _.template($('#record').text())({item: itemJson[items.mId].history})
 								$('#check-tab').html(html);
 							}

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="969936c2-c510-41ce-8b7d-1144898cfb6a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJs/html/入门.html" afterPath="$PROJECT_DIR$/src/AngularJs/html/入门.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJs/js/angular.js" afterPath="$PROJECT_DIR$/src/AngularJs/js/angular.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularJs/js/angular.min.js" afterPath="$PROJECT_DIR$/src/AngularJs/js/angular.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/.idea/H5.iml" afterPath="$PROJECT_DIR$/src/H5/.idea/H5.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/.idea/modules.xml" afterPath="$PROJECT_DIR$/src/H5/.idea/modules.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/.idea/workspace.xml" afterPath="$PROJECT_DIR$/src/H5/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/ab页面利用postMessage跨域/a.html" afterPath="$PROJECT_DIR$/src/H5/ab页面利用postMessage跨域/a.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/ab页面利用postMessage跨域/b.html" afterPath="$PROJECT_DIR$/src/H5/ab页面利用postMessage跨域/b.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/html/a标签锚点.html" afterPath="$PROJECT_DIR$/src/H5/html/a标签锚点.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/html/css3弹性布局.html" afterPath="$PROJECT_DIR$/src/H5/html/css3弹性布局.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/html/emall.html" afterPath="$PROJECT_DIR$/src/H5/html/emall.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/html/h5新标签.html" afterPath="$PROJECT_DIR$/src/H5/html/h5新标签.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/html/new_file.html" afterPath="$PROJECT_DIR$/src/H5/html/new_file.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/html/图片上传.html" afterPath="$PROJECT_DIR$/src/H5/html/图片上传.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/html/图片预览1.html" afterPath="$PROJECT_DIR$/src/H5/html/图片预览1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/html/图片预览2.html" afterPath="$PROJECT_DIR$/src/H5/html/图片预览2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/html/水平垂直居中.html" afterPath="$PROJECT_DIR$/src/H5/html/水平垂直居中.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/img/WechatIMG3.jpeg" afterPath="$PROJECT_DIR$/src/H5/img/WechatIMG3.jpeg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/img/xb.png" afterPath="$PROJECT_DIR$/src/H5/img/xb.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/H5/js/public/jquery-2.1.4.js" afterPath="$PROJECT_DIR$/src/H5/js/public/jquery-2.1.4.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/babel/browser.js" afterPath="$PROJECT_DIR$/src/babel/browser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/echarts/html/index.html" afterPath="$PROJECT_DIR$/src/echarts/html/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/echarts/js/echarts.js" afterPath="$PROJECT_DIR$/src/echarts/js/echarts.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/echarts/json/shops.json" afterPath="$PROJECT_DIR$/src/echarts/json/shops.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/es6/html/export-im.html" afterPath="$PROJECT_DIR$/src/javaScript/es6/html/export-im.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/es6/html/index.html" afterPath="$PROJECT_DIR$/src/javaScript/es6/html/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/es6/html/数组的扩展.html" afterPath="$PROJECT_DIR$/src/javaScript/es6/html/数组的扩展.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/es6/html/数组解构.html" afterPath="$PROJECT_DIR$/src/javaScript/es6/html/数组解构.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/es6/js/export.js" afterPath="$PROJECT_DIR$/src/javaScript/es6/js/export.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/es6/js/public/com.js" afterPath="$PROJECT_DIR$/src/javaScript/es6/js/public/com.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/es6/js/public/jquery-2.1.4.js" afterPath="$PROJECT_DIR$/src/javaScript/es6/js/public/jquery-2.1.4.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/date.html" afterPath="$PROJECT_DIR$/src/javaScript/html/date.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/export-t1.html" afterPath="$PROJECT_DIR$/src/javaScript/html/export-t1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/export.html" afterPath="$PROJECT_DIR$/src/javaScript/html/export.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/for包含settimeout.html" afterPath="$PROJECT_DIR$/src/javaScript/html/for包含settimeout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/geter-seter.html" afterPath="$PROJECT_DIR$/src/javaScript/html/geter-seter.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/map-set-filter.html" afterPath="$PROJECT_DIR$/src/javaScript/html/map-set-filter.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/template.html" afterPath="$PROJECT_DIR$/src/javaScript/html/template.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/冒泡排序.html" afterPath="$PROJECT_DIR$/src/javaScript/html/冒泡排序.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/判断点击元素标签名称.html" afterPath="$PROJECT_DIR$/src/javaScript/html/判断点击元素标签名称.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/变量提升.html" afterPath="$PROJECT_DIR$/src/javaScript/html/变量提升.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/数组去重.html" afterPath="$PROJECT_DIR$/src/javaScript/html/数组去重.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/html/面向对象.html" afterPath="$PROJECT_DIR$/src/javaScript/html/面向对象.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/js/export-test.js" afterPath="$PROJECT_DIR$/src/javaScript/js/export-test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/js/export.js" afterPath="$PROJECT_DIR$/src/javaScript/js/export.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/js/public/browser.js" afterPath="$PROJECT_DIR$/src/javaScript/js/public/browser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/js/public/jquery-2.1.4.js" afterPath="$PROJECT_DIR$/src/javaScript/js/public/jquery-2.1.4.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/js/public/rem.js" afterPath="$PROJECT_DIR$/src/javaScript/js/public/rem.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/js/public/underscore.js" afterPath="$PROJECT_DIR$/src/javaScript/js/public/underscore.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/javaScript/json/shops.json" afterPath="$PROJECT_DIR$/src/javaScript/json/shops.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/less/css/style.css" afterPath="$PROJECT_DIR$/src/less/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/less/css/style.less" afterPath="$PROJECT_DIR$/src/less/css/style.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/less/html/index.html" afterPath="$PROJECT_DIR$/src/less/html/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/less/js/less.min.js" afterPath="$PROJECT_DIR$/src/less/js/less.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/requirejs/html/index.html" afterPath="$PROJECT_DIR$/src/requirejs/html/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/requirejs/js/main.js" afterPath="$PROJECT_DIR$/src/requirejs/js/main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/requirejs/js/model/a.js" afterPath="$PROJECT_DIR$/src/requirejs/js/model/a.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/requirejs/js/model/b.js" afterPath="$PROJECT_DIR$/src/requirejs/js/model/b.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/requirejs/js/model/c.js" afterPath="$PROJECT_DIR$/src/requirejs/js/model/c.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/requirejs/js/model/d.js" afterPath="$PROJECT_DIR$/src/requirejs/js/model/d.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/requirejs/js/model/test-main.js" afterPath="$PROJECT_DIR$/src/requirejs/js/model/test-main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/requirejs/js/require.js" afterPath="$PROJECT_DIR$/src/requirejs/js/require.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/backbone/html/form-as.html" afterPath="$PROJECT_DIR$/src/underscore/backbone/html/form-as.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/backbone/html/index.html" afterPath="$PROJECT_DIR$/src/underscore/backbone/html/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/backbone/html/template.html" afterPath="$PROJECT_DIR$/src/underscore/backbone/html/template.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/backbone/html/test.html" afterPath="$PROJECT_DIR$/src/underscore/backbone/html/test.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/backbone/js/public/backbone.js" afterPath="$PROJECT_DIR$/src/underscore/backbone/js/public/backbone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/backbone/js/public/browser.js" afterPath="$PROJECT_DIR$/src/underscore/backbone/js/public/browser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/backbone/js/public/jquery-2.1.4.js" afterPath="$PROJECT_DIR$/src/underscore/backbone/js/public/jquery-2.1.4.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/backbone/js/public/underscore.js" afterPath="$PROJECT_DIR$/src/underscore/backbone/js/public/underscore.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/backbone/js/test.js" afterPath="$PROJECT_DIR$/src/underscore/backbone/js/test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/index.html" afterPath="$PROJECT_DIR$/src/underscore/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/js/backbone.js" afterPath="$PROJECT_DIR$/src/underscore/js/backbone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/js/jquery-2.1.4.js" afterPath="$PROJECT_DIR$/src/underscore/js/jquery-2.1.4.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/js/underscore.js" afterPath="$PROJECT_DIR$/src/underscore/js/underscore.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/json/invoice_list.json" afterPath="$PROJECT_DIR$/src/underscore/json/invoice_list.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/underscore/template.html" afterPath="$PROJECT_DIR$/src/underscore/template.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/app.js" afterPath="$PROJECT_DIR$/src/wx/quickstart/app.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/app.json" afterPath="$PROJECT_DIR$/src/wx/quickstart/app.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/app.wxss" afterPath="$PROJECT_DIR$/src/wx/quickstart/app.wxss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/pages/index/index.js" afterPath="$PROJECT_DIR$/src/wx/quickstart/pages/index/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/pages/index/index.wxml" afterPath="$PROJECT_DIR$/src/wx/quickstart/pages/index/index.wxml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/pages/index/index.wxss" afterPath="$PROJECT_DIR$/src/wx/quickstart/pages/index/index.wxss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/pages/logs/logs.js" afterPath="$PROJECT_DIR$/src/wx/quickstart/pages/logs/logs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/pages/logs/logs.json" afterPath="$PROJECT_DIR$/src/wx/quickstart/pages/logs/logs.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/pages/logs/logs.wxml" afterPath="$PROJECT_DIR$/src/wx/quickstart/pages/logs/logs.wxml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/pages/logs/logs.wxss" afterPath="$PROJECT_DIR$/src/wx/quickstart/pages/logs/logs.wxss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/wx/quickstart/utils/util.js" afterPath="$PROJECT_DIR$/src/wx/quickstart/utils/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-cli/package.json" afterPath="$PROJECT_DIR$/node_modules/babel-cli/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-polyfill/package.json" afterPath="$PROJECT_DIR$/node_modules/babel-polyfill/package.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/underscore/template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="59" column="59" lean-forward="true" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="709" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="underscore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="HTML&#10;JavaScript 1.5" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="969936c2-c510-41ce-8b7d-1144898cfb6a" name="Default" comment="" />
+      <created>1491032993612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1491032993612</updated>
+      <workItem from="1491032996446" duration="1097000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1097000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/underscore/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="59" column="59" lean-forward="true" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
