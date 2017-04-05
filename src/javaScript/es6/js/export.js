@@ -1,3 +1,4 @@
+import "babel-polyfill"
 var i = 12,
 	Note = function(){
 		alert(1);
