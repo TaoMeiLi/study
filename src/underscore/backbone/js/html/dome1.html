@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script src="../js/public/jquery-2.1.4.js"></script>
+		<script src="../js/public/bootstrap.min.js"></script>
+		<script src="../js/public/underscore.js"></script>
+		<script src="../js/public/backbone.js"></script>
+	
+		<link rel="stylesheet" href="../js/public/bootstrap.min.css" />
+		<style>
+			.we-row{height:200px;}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row we-row" id="sidebar">
+				<div class="form-group">
+					<input type="text" class="input-group" />
+					<input type="button" class="btn" value="color"/>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			var Sidebar = Backbone.Model.extend({
+			  promptColor: function() {
+//			    var cssColor = prompt("Please enter a CSS color:");
+				var cssColor = $('input[type=input]').val();
+			    this.set({color: cssColor});
+			    console.log(cssColor);
+			  }
+			});
+			
+			var sidebar = new Sidebar;
+			sidebar.on('click:input[type=button]', function(model, color) {
+				sidebar.promptColor();
+			  $('#sidebar').css({background: color});
+			});
+			
+			sidebar.set({color: 'red'});
+			
+			
+		</script>
+	</body>
+</html>

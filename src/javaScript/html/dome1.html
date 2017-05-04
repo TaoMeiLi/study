@@ -43,8 +43,48 @@
 			console.log(Array);
 			console.log(Array.splice(2,4,'oo','hh'));//删除下标2-4（包含4）,被'oo','hh'替换，返回删除的2-4
 			console.log(Array);
+			var object = {
+				name: 'xiaoming',
+				age: '14'
+			}
+//			if('name' in object){		//判断对象中是否存在某个属性(包含继承的)
+//				alert(1);
+//			}else {
+//				alert(2);
+//			}
+//			if(object.hasOwnProperty('name')){   //判断对象中是否存在某个属性(不包含继承的)
+//				alert(1);
+//			}
+
+//		判断
+//		循环
+		var arrays = [1,3,5,7,23,54];
+		var objects = {
+			name: 'xiao',
+			age: '14',
+			sex: 'n'
+		};
+		for(var key in objects){
+			if(objects.hasOwnProperty(key)){
+				console.log(key);//name
+							//age
+							//sex
+			}
 			
-			
+		}
+		for(var x in arrays){
+			//console.log(arrays[x]);//x表示索引值；
+		}
+		var i=arrays.length-1;
+		while(i>=0){
+			console.log('hello,'+arrays[i]);
+			i--;
+		}
+		
+		
+		
+		
+		
 		</script>
 	</head>
 	<body>
