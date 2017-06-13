@@ -1,0 +1,714 @@
+// 储值 -> 首页
+// -----------------------------------------------------------------------------
+
+.member-home {
+  .search-box {
+    margin: -30px -30px 30px;
+    padding: 0 30px;
+    border-bottom: 1px solid #dde9ed;
+    .search-condition {
+      width: 400px;
+      margin: 0;
+      padding: 12px 0 0;
+      border: none;
+      display: inline-block;
+    }
+    .examine-entry {
+      float: right;
+      line-height: 60px;
+    }
+  }
+	.form-search .form-control {
+		width: 160px;
+	}
+
+	.we-section + .we-section {
+		margin-top: 20px;
+	}
+
+	.member-link{
+		float: right;
+		a{
+			text-decoration: underline;
+			margin-left: 15px;
+		}
+	}
+  .table-tab {
+    margin-bottom: 13px;
+  }
+
+	.member-prepaid {
+		margin-bottom: 30px;
+	}
+
+	.adjust-stored{
+		display: inline-block;
+		width: 60px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
+		line-height: 1;
+		border-radius: 0;
+		margin-right: 5px;
+	}
+
+	.modal-body{
+		.smsbox{
+			width: 300px;
+		}
+	}
+
+	.adjust-body{
+		min-height: 336px;
+		.shored-note{
+			height: 116px;
+		}
+		dd strong{
+			font-size: 20px;
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+	}
+
+	.adjust-gift{
+		width: 160px;
+		.form-control{
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		//调整券搜索框下拉菜单
+         .dropdown-menu{
+             max-height: 300px;
+             overflow-y: scroll;
+         }
+	}
+
+	.member-coupon{
+		h5 a{
+			text-decoration: underline;
+			margin-left: 15px;
+			font-size: 13px;
+		}
+	}
+
+	////http://pm.acewiller.com/task-view-1192.html
+	.actual_binds{
+    line-height: 74px;
+    font-size: 18px;
+    position: relative;
+    .member-profile {
+      line-height: 74px;
+      height: 74px;
+      .gender {
+        font-size: 14px;
+        color: #646472;
+      }
+      .member-link{
+        a {
+          font-size: 13px;
+          text-decoration: none;
+        }
+      }
+      .remove{
+        padding-top: 2px;
+        font-size: 14px;
+        color: #f00;
+        margin: 0 39px 0 24px;
+        line-height: 72px;
+      }
+      .remove-card{
+        color: #646472;
+      }
+      .card-code {
+        color: #646472;
+        float: none;
+      }
+      > span {
+        display: inline-block;
+        float: left;
+
+        > strong {
+          font-size: 24px;
+          font-weight: 500;
+          height: 74px;
+          line-height: 68px;
+          display: inline-block;
+        }
+
+        > b {
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        > small {
+          color: @color-default;
+        }
+
+        + span {
+          margin-left: 15px;
+
+          /*http://pm.acewiller.com/task-view-1618.html*/
+          max-width: 330px;
+          overflow: hidden;
+          word-wrap: break-word;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-break: break-all;
+
+          a {
+            color: #000 !important;
+            text-decoration: none !important;
+          }
+          .tooltip-inner {
+            text-align: left;
+          }
+        }
+      }
+      label {
+        font-weight: normal;
+        font-size: 11px;
+        color: #A5A5B7;
+        margin-left: 40px;
+      }
+      a {
+        font-size: 11px;
+      }
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+      a.toggle {
+        font-size: 11px;
+        text-decoration: underline;
+        margin-left: 20px;
+      }
+      input.suggestion {
+        position: absolute;
+        top: 50px;
+        left: 200px;
+        width: 200px;
+        line-height: 34px;
+        border: 1px solid #CACAD9;
+        text-indent: 40px;
+        font-size: 14px;
+        background: #fff url('@{img}icons-70.png') no-repeat 10px 50%;
+        background-size: 20px 20px;
+      }
+      .dropdown-menu {
+        min-width: 200px;
+        max-height: 116px;
+        overflow-y: scroll;
+      }
+    }
+	}
+  .edit-actual-modal {
+    .we-date-group {
+      display: block;
+    }
+  }
+  .edit-info-modal {
+    .we-date-group {
+      display: block;
+    }
+  }
+}
+
+.table-like {
+	&:extend(.clearfix all);
+	border: @border-light;
+
+	> dl {
+		display: table;
+		width: 100%;
+		margin-bottom: 0;
+
+		> dt,
+		> dd {
+			display: table-cell;
+			min-height: 40px;
+			padding: 10px 20px;
+			border-right: @border-light;
+			line-height: 20px;
+			overflow: hidden;
+		}
+
+		> dt {
+			width: percentage((2 / 12));
+			font-size: 12px;
+			background-color: @bg-color;
+
+			> span {
+				font-size: 92%;
+				font-weight: normal;
+			}
+		}
+
+		> dd {
+			width: percentage((4 / 12));
+			font-size: 13px;
+		}
+
+		> :last-child {
+			border-right: none;
+		}
+
+		+ dl {
+			border-top: @border-light;
+		}
+	}
+}
+
+.more-info-body{
+	height: 376px;
+	overflow: auto;
+}
+
+.dl-member{
+	dl{
+		dd{
+			.danger{
+				color: #f00;
+			}
+			a{
+				margin-left: 40px;
+			}
+			small{
+				font-size: 100%;
+				color: #a8a8b7;
+			}
+			label{
+				margin-right: 20px;
+			}
+			b{
+				font-weight: normal;
+				margin-right: 10px;
+			}
+			.we-date-group{
+				margin-top: 10px;
+			}
+		}
+		#cardPhone .form-control{
+			width: 148px;
+			display: inline-block;
+		}
+	}
+}
+.dl-member-hr{
+	margin: 0 50px 25px;
+}
+
+//影响了二维码代金券时间的弹框
+// .datepicker{
+// 	z-index: 1999 !important;
+// }
+
+.confirm-info-modal, .confirm-card-modal{
+	.modal-body {
+		padding: 30px 15px 75px;
+	}
+	.modal-content{
+		height: 488px;
+	}
+}
+.get-vxpay-modal{
+	.modal-body{
+		padding: 30px 50px;
+		h5{
+			color: #2C3F50;
+		}
+		.vxpay-body{
+			margin-top: 25px;
+			padding: 25px 0;
+			border-top: 1px solid #dde9ed;
+			border-bottom: 1px solid #dde9ed;
+			.vxpay-input{
+				position: relative;
+				float: left;
+				width: 240px;
+				padding-top: 32px;
+				label{
+					font-weight: 500;
+					margin-top: 20px;
+				}
+				input{
+					width: 280px;
+					height: 36px;
+				}
+			}
+			img{
+				display: block;
+				float: right;
+				width: 294px;
+			}
+			&:after{
+				clear: both;
+				height: 0;
+				display: block;
+				content:'';
+			}
+		}
+	}
+}
+// 会员管理 -> 最有价值会员
+// -----------------------------------------------------------------------------
+.value-sub{
+  margin: -30px -30px 30px;
+  padding: 12px 30px;
+  border-bottom: 1px solid #dde9ed;
+  background-color: #fcfdfd;
+  a{
+    color:#2c3f50;
+    margin-right: 30px;
+    &.active{
+      color: #09f;
+    }
+  }
+}
+
+.value-notice{
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  vertical-align: middle;
+  margin-top: -2px;
+  .we-notice-toggle{
+    height: 16px;
+    margin-top: -15px;
+  }
+}
+
+.value-home{
+  .value-section{
+    .section-header{
+     padding: 5px 0 15px;
+    }
+  }
+}
+
+.table-value{
+  tbody{
+    tr{
+      &:nth-of-type(1),
+      &:nth-of-type(2),
+      &:nth-of-type(3){
+        td{
+          >span.score1,
+          >span.score2{
+            width:31px;
+            height:37px;
+            padding-top: 15px;
+            font-weight: bold;
+            background:url('@{img}value-icon.png') -10px -10px no-repeat;
+          }
+        }
+      }
+      &:nth-of-type(1){
+        td{
+          >span.score1{
+            color:#FF8E0D;
+            background-position:-10px -57px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 会员 -> 锁定页面
+// -----------------------------------------------------------------------------
+
+.unlock-modal, .lock-modal {
+    .modal-dialog {
+        width: 480px;
+
+        .we-dl.dl-horizontal>dt {
+            width:100px;
+        }
+        .we-dl>dd {
+            margin-left:100px;
+            margin-bottom:10px;
+        }
+    }
+}
+.member-opencard {
+  .we-date-group {
+    margin-top:10px;
+  }
+  .control-label {
+    >span{
+      margin-right: 5px;
+      color:#FF0000;
+    }
+  }
+}
+.lock-info {
+	color: #72797F;
+	margin: 45px 0 0 0;
+}
+.we-table-lock {
+	margin-top: 20px;
+}
+// 会员管理 -> 最有价值会员
+.card_open {
+  .card_list_link {
+    float: right;
+  }
+  .control-label-name {
+    line-height: 20px;
+    .star {
+      color: #FF0000;
+      float: right;
+      height: 20px;
+      padding-top: 3px;
+      margin-right: 4px;
+    }
+    .star_name {
+      float: right;
+    }
+  }
+  .card_state {
+    padding-left: 0;
+    margin-bottom: 0;
+    > li {
+      display: inline-block;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      list-style: none;
+    }
+    > li + li {
+      margin-left: 20px;
+    }
+  }
+  .we-date {
+    width: 150px;
+    margin-top: 15px;
+  }
+  .modal-sm {
+    width: 200px;
+    .modal-body {
+      padding: 25px 15px;
+      height: auto;
+      text-align: center;
+    }
+  }
+  .card_model_success {
+    box-shadow: 4px 4px 4px #E1E4E6;
+  }
+  .success_text {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 45px;
+    display: inline-block;
+    background: url("../img/success_s.jpg") no-repeat left top;
+  }
+}
+.modal-backdrop.in {
+  opacity: 0;
+}
+// 会员 -> 手工调账审核列表
+// -----------------------------------------------------------------------------
+.examine-list {
+  .we-form {
+    .input-sm {
+      width: 120px;
+    }
+  }
+  .we-table-border {
+    border: 1px solid #dde9ed;
+    .note {
+      width: 135px;
+      word-break: break-all;
+      white-space: normal;
+    }
+    .color-red {
+      color: #f00;
+    }
+  }
+  .examine-modal {
+    .modal-title {
+      font-size: 20px;
+    }
+    .modal-body {
+      color: #646473;
+      padding: 30px;
+      text-align: left;
+      .state-box {
+        width: 100%;
+        overflow: auto;
+        label {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+      textarea {
+        width: 100%;
+        resize: none;
+      }
+    }
+  }
+  .reject-modal {
+    .modal-body {
+      text-align: left;
+      .reason-box {
+        line-height: 26px;
+        span {
+          display: block;
+        }
+        span:first-child {
+          float: left;
+          width: 75px;
+        }
+        span:last-child {
+          width: 240px;
+          margin-left: 75px;
+        }
+      }
+    }
+  }
+}
+
+.icon-member {
+  line-height: 40px;
+  padding-left: 33px;
+  margin-bottom: 20px;
+}
+
+.member-consume {
+  .panel-body > a:hover {
+    text-decoration: none;
+    color: #09f;
+  }
+
+  #inputGroupper {
+    width: 160px;
+  }
+  #inputTel {
+    width: 210px;
+  }
+}
+
+.we-statistic.group-recharge {
+  .form-search {
+    margin-top: 60px;
+  }
+
+  .col-sm-10 {
+    line-height: 36px;
+  }
+
+  #inputRecharge, #inputRepayment {
+    width: 160px;
+  }
+}
+
+.grouper-selector {
+  height: 546px;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+
+  header {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    border-bottom: 1px solid #ccc;
+
+    span {
+      font-weight: bold;
+      margin-right: 30px;
+    }
+
+    .form-control {
+      display: inline-block;
+      width: 300px;
+      border-radius: 0;
+      margin-right: 15px;
+    }
+  }
+
+  .grouper-container {
+    overflow: hidden;
+    height: 544px;
+
+    article {
+      height: 483px;
+      overflow-y: scroll;
+
+      .search-tip {
+        color: #bbb;
+        text-align: center;
+        padding-top: 50px;
+      }
+    }
+
+    table {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .grouper-selected {
+    float: right;
+    width: 250px;
+    height: 544px;
+    overflow: hidden;
+    border-left: 1px solid #ccc;
+
+		.selected-box {
+			height: 534px;
+			overflow: auto;
+		}
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding-left: 10px;
+        line-height: 50px;
+
+        span {
+          display: inline-block;
+          position: relative;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 50px;
+          line-height: 1;
+          margin: 0 0 -2px 3px;
+        }
+
+        b {
+          float: right;
+          cursor: pointer;
+          color: #637180;
+          font-weight: normal;
+          border: 1px solid rgba(228,228,236,.8);
+          width: 18px;
+          height: 18px;
+          line-height: 18px;
+          border: 1px solid #A5A5B8;
+          text-align: center;
+          border-radius: 50%;
+          margin: 14px 20px 0 0;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.add-group {
+  #inputNumber,
+  #inputContact {
+    width: 170px;
+  }
+}
+
+// 会员管理-会员列表
+// -----------------------------------------------------------------------------
+.member-table-body {
+}
