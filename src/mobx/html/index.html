@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <script src="../js/build/react.js"></script>
+	<script src="../js/build/react-dom.js"></script> -->
+	<script src="../js/build/jquery.min.js"></script>
+	<script src="../js/build/TypeaheadDzm.js"></script>
+</head>
+<body>
+	<div class="">
+		<input type="text" id="typeahead">
+	</div>
+
+	<script>
+		new TypeaheadDzm({
+			ele: $("#typeahead"),
+			evFocus: "off",
+			limitNum: 3,
+			dataSource: [
+				{
+					"value": "1",
+					"id": "11",
+					"name": "1a"
+				},
+				{
+					"value": "2",
+					"id": "22",
+					"name": "2b"
+				},
+				{
+					"value": "3",
+					"id": "33",
+					"name": "3c"
+				}
+			],
+			attrGather: {
+				"txt": "value",
+				"attr": "id",
+				"attr2": "name"
+			},
+			blurCallback: function (val) {
+				console.log(val);
+			},
+			selectCallback: function (ele) {
+				console.log(ele);
+			}
+		});
+	</script>
+</body>
+</html>
