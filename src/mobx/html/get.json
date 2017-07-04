@@ -1,0 +1,22 @@
+{
+	"errcode": 0,
+	"errmsg": "操作成功",
+	"result": 
+		[
+			{
+				"value": "a",
+				"id": "11",
+				"name": "1a"
+			},
+			{
+				"value": "b",
+				"id": "22",
+				"name": "2b"
+			},
+			{
+				"value": "c",
+				"id": "33",
+				"name": "3c"
+			}
+		]
+}

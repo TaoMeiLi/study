@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贪吃蛇</title>
+	<style type="text/css">
+		*{margin:0; padding:0;}
+		body{overflow: hidden;}
+		#main{width:100%;}
+	</style>
+
+	<script>
+		window.onload = function() {
+			var oMain = document.getElementById('main'),
+				bodyWidth = document.body.clientWidth,
+				bodyHeight = document.documentElement.clientHeight,
+				myCanvas = "<canvas id='mycanvas' width='"+bodyWidth+"px' height='"+bodyHeight+"'></canvas>";
+
+			oMain.insertAdjacentHTML("beforeEnd", myCanvas);
+
+			var oMycanvas = document.getElementById('mycanvas'),
+				pen = oMycanvas.getContext('2d'),
+				w = oMycanvas.width,
+				h = oMycanvas.height;
+
+			//随机数
+			function ran(n,m) {
+				var ranN = parseInt(Math.random() * (m-n) + n);
+				return ranN;
+			}
+			//清除画布
+			function clear() {
+				pen.clearRect(0,0,w,h);
+			}
+         
+			
+			var pointArray = [],	//存储点的坐标和运动速度
+				pointNum = 2,		//点的个数
+				snakelength = 0,	//蛇的长度默认为0
+				snakeStepX = 7, 	//蛇在x轴的速度
+				snakeStepY = 0,		//蛇在y轴的速度
+				snakex = 10,		//蛇的x坐标
+				snakey = 100,		//蛇的y坐标
+				time,
+				scope = 30,			//蛇和点点范围
+				r = 3,
+				t;
+
+			//储存页面中随机出现的游动的点的坐标和运动速度
+			function pointRan(pointNum) {
+				for(var i=0; i<pointNum; i++) { 
+					pointArray.push({
+						'pointx': ran(0,w),
+						'pointy': ran(0,h),
+						'stepx': ran(-5,5),
+						'stepy': ran(-5,5),
+						'rgba': ran(0,256) +","+ ran(0,256) +","+ ran(0,256)
+					});
+				}
+			}
+			pointRan(pointNum);
+			time = setInterval(function(){
+				clear();	//清除运动路径
+				//画运动的点
+				for(var i=0; i<pointArray.length; i++) {
+					if(pointArray[i].stepx==0&&pointArray[i].stepy==0){
+						pointArray[i].stepx = 1;
+					}
+					pointArray[i].pointx += pointArray[i].stepx;
+					pointArray[i].pointy += pointArray[i].stepy;
+
+					if(pointArray[i].pointx <0 || pointArray[i].pointx > w) {
+						pointArray[i].stepx = -pointArray[i].stepx;
+					}
+					if(pointArray[i].pointy <0 || pointArray[i].pointy > h) {
+						pointArray[i].stepy = -pointArray[i].stepy;
+					}
+					// console.log(Math.abs(snakex-pointArray[i].pointx),Math.abs(snakey -pointArray[i].pointy));
+					if(Math.abs(snakex-pointArray[i].pointx)<scope && Math.abs(snakey -pointArray[i].pointy)<scope ) {
+						pointArray.splice(i,1);
+						pointRan(1);
+					}
+					pen.beginPath();
+					pen.fillStyle="rgba("+ pointArray[i].rgba +",1)";
+					pen.arc(pointArray[i].pointx,pointArray[i].pointy,4,0,2*Math.PI);
+					pen.fill();
+					pen.closePath();
+				}
+
+				snakex +=snakeStepX;
+				snakey +=snakeStepY;
+
+				//画蛇
+				pen.beginPath();
+				// pen.rotate(Math.PI*2/2);
+				pen.fillStyle="red";
+				pen.arc(snakex,snakey,10,0,2*Math.PI);
+				pen.arc(snakex-14,snakey,5,0,2*Math.PI);
+				pen.fill();
+				pen.beginPath();
+				pen.fillStyle = "#fff";
+				pen.arc(snakex+1,snakey-6,4,0,2*Math.PI);
+				pen.arc(snakex+1,snakey+6,4,0,2*Math.PI);
+				pen.fill();
+				pen.beginPath();
+				pen.moveTo(snakex+10,snakey-3);
+				pen.lineTo(snakex+5,snakey);
+				pen.lineTo(snakex+10,snakey+3);
+				pen.fill();
+				pen.closePath();
+				
+				if(snakex>w || snakex <0 || snakey>h || snakey <0) {
+					console.log('游戏结束');
+					clearInterval(time);
+				}
+
+			},60);
+
+			
+			//调节蛇的运动方向;
+			document.onkeydown = function() {
+				if(event.keyCode == 37) {
+					console.log('左');
+					console.log(snakex ,snakeStepX,snakey ,snakeStepY);
+					//判断当前的方向和改变的方向 左：-snakeStepX; snakeStepY=0
+					r = 2;
+					snakeStepX = -7;
+					snakeStepY = 0;
+
+				}
+				if(event.keyCode == 38) {
+					console.log('上');
+					//判断当前的方向和改变的方向 上：snakeStepX=0; -snakeStepY
+					snakeStepX = 0;
+					snakeStepY = -7;
+				}
+				if(event.keyCode == 39) {
+					console.log('右');
+					//判断当前的方向和改变的方向 右：snakeStepX; snakeStepY=0
+					snakeStepX = 7;
+					snakeStepY = 0;
+				}
+				if(event.keyCode == 40) {
+					console.log('下');
+					//判断当前的方向和改变的方向 上：snakeStepX=0; snakeStepY
+					snakeStepX = 0;
+					snakeStepY = 7;
+				}
+			}
+			
+		}
+
+	</script>
+</head>
+<body>
+	<div id="main">
+	</div>
+</body>
+</html>

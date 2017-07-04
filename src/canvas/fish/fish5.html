@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>智能社--http://www.zhinengshe.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background: #000;
+            text-align: center;
+        }
+        canvas{
+            background: url(img/game_bg_2_hd.jpg);
+        }
+    </style>
+    <script src="js/common.js"></script>
+    <script src="js/resource.js"></script>
+    <script src="js/fish.js"></script>
+    <script src="js/cannon.js"></script>
+    <script src="js/bullet.js"></script>
+    <script>
+        window.onload = function () {
+            var oC=document.querySelector('#c1');
+
+            var gd=oC.getContext('2d');
+            // 加载资源
+            loadImage(resource, function(){
+                // 存炮弹
+                var arrBullet=[];
+
+                // 画大炮
+                var c=new Cannon(7);
+                setInterval(function(){
+                    gd.clearRect(0,0,oC.width,oC.height);
+                    // 画炮台
+                    gd.drawImage(JSON['bottom'],
+                            0,0,765,72,
+                            0,oC.height-70,765,72
+                    );
+                    // 画大炮
+                    c.draw(gd);
+                    // 画子弹
+                    for(var i=0; i<arrBullet.length; i++){
+                        arrBullet[i].draw(gd);
+                    }
+
+                    // 优化，子弹超出画布死
+                    for(var i=0; i<arrBullet.length; i++){
+                        if(
+                                arrBullet[i].x<0 ||
+                                arrBullet[i].y<0 ||
+                                arrBullet[i].x>oC.width ||
+                                arrBullet[i].y>oC.height
+                        ){
+                            arrBullet.splice(i, 1);
+                            i--;
+                        }
+                    }
+                }, 16);
+                oC.onclick=function(ev){
+                    var y=c.y-ev.pageY;
+                    var x=ev.pageX-c.x-oC.offsetLeft;
+
+                    var d=90-a2d(Math.atan2(y,x));
+                    c.rotate=d;
+                    c.emit();
+                    // 发射炮弹
+                    var bullet=new Bullet(c.type);
+                    bullet.x=c.x;
+                    bullet.y=c.y;
+                    bullet.rotate=c.rotate;
+                    arrBullet.push(bullet);
+                };
+            });
+        };
+    </script>
+</head>
+<body>
+    <canvas id="c1" width="800" height="600"></canvas>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

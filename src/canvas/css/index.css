@@ -1,0 +1,36 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#canvas {
+	border: 1px solid #ccc;
+}
+
+.box1{
+	position: relative;
+}
+.box1 #canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.box1 .page{
+	width: 1200px;
+	height: 602px;
+	background-color:red;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	text-align: center;
+	line-height: 500px;
+	font-size:100px;
+}
+
+
+#img{
+	display: none;
+}
+#canvasimg{
+	border: 1px solid #fac;
+}

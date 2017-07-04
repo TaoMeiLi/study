@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>智能社--http://www.zhinengshe.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background: #000;
+            text-align: center;
+        }
+        canvas{
+            background: url(img/game_bg_2_hd.jpg);
+        }
+    </style>
+    <script src="js/common.js"></script>
+    <script>
+        var FISH_SIZE=[
+            null,
+            {w: 55, h: 37},
+            {w: 78, h: 64},
+            {w: 72, h: 56},
+            {w: 77, h: 59},
+            {w: 107, h: 122}
+        ];
+        function Fish(type){
+            this.x=0;
+            this.y=0;
+            this.rotate=0;
+            this.type=type;
+        }
+        Fish.prototype.draw=function(gd){
+            var w=FISH_SIZE[this.type].w;
+            var h=FISH_SIZE[this.type].h;
+            gd.save();
+            gd.translate(this.x, this.y);
+            gd.rotate(d2a(this.rotate)); // 弧度
+            if(this.rotate>=90 && this.rotate<=270){
+                gd.scale(1,-1);
+            }
+            // 画
+            gd.drawImage(JSON['fish'+this.type],
+                0,0,w,h,
+                -w/2,-h/2,w,h
+            );
+            gd.restore();
+        };
+        window.onload = function () {
+            var oC=document.querySelector('#c1');
+
+            var gd=oC.getContext('2d');
+            // 加载资源
+            loadImage(['fish1','fish2','fish3','fish4','fish5'], function(){
+                var f1=new Fish(2);
+
+                f1.x=300;
+                f1.y=200;
+                f1.rotate=0;
+                f1.draw(gd);
+            });
+        };
+    </script>
+</head>
+<body>
+    <canvas id="c1" width="800" height="600"></canvas>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

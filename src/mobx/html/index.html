@@ -3,50 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<!-- <script src="../js/build/react.js"></script>
-	<script src="../js/build/react-dom.js"></script> -->
 	<script src="../js/build/jquery.min.js"></script>
-	<script src="../js/build/TypeaheadDzm.js"></script>
+	<script src="https://unpkg.com/mobx/lib/mobx.umd.js"></script>
+
 </head>
 <body>
-	<div class="">
-		<input type="text" id="typeahead">
+	<div class="main">
+		<button class="add" value="+" ></button>
+		<span class="text"></span>
+		<button class="del" value="-" ></button>
 	</div>
 
-	<script>
-		new TypeaheadDzm({
-			ele: $("#typeahead"),
-			evFocus: "off",
-			limitNum: 3,
-			dataSource: [
-				{
-					"value": "1",
-					"id": "11",
-					"name": "1a"
-				},
-				{
-					"value": "2",
-					"id": "22",
-					"name": "2b"
-				},
-				{
-					"value": "3",
-					"id": "33",
-					"name": "3c"
-				}
-			],
-			attrGather: {
-				"txt": "value",
-				"attr": "id",
-				"attr2": "name"
-			},
-			blurCallback: function (val) {
-				console.log(val);
-			},
-			selectCallback: function (ele) {
-				console.log(ele);
-			}
-		});
-	</script>
+	<script type="text/javascript">
+		var $main = $('.main'),
+			$add = $('.add'),
+			$text = $('text'),
+			$del = $('del');
+		var mobxDome = mobx.observable({
+			
+		})
+
+
+	</script>	
 </body>
 </html>
