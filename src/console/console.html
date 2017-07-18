@@ -5,9 +5,77 @@
 	<title>consol的用法</title>
 </head>
 <body>
-	
+	<div id="main">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
 	<script>
-		 
+
+		var a = true,
+			b = false,
+			c = 0,
+			d = 1,
+			label = 1,
+			obj1 = {
+				"name" :"taomeili",
+				"tel" :"13718189980",
+				"QQ": "1587860893"
+			},
+			obj2 = {
+				"name" :"dandan",
+				"tel" :"9980",
+				"QQ": "0893"
+			},
+			array1 = [1,2,3,4,5];
+
+		console.assert(c, [obj1, obj2]);//第一个参数为false，消息在控制台显示；
+		console.assert(c, d, c);
+		console.log([obj1, obj2]);
+
+		//清空控制台
+		//console.clear();//如果谷歌浏览器“Network”中勾选了“preserve log”,console.clear不生效
+
+		//输出其所在位置上执行次数
+		console.count(label);//如果label有值，则返回相同label的执行次数 
+		
+		//打印，跟console.log类似，只不过console.dir()会在打印的输出的数据前加一个点击折叠的小三角形；
+		console.dir();
+
+		//可以打印出html节点及后代元素的交互树;但是console.log也可以做到
+		var oMain = document.getElementById('main');
+		console.dirxml(oMain);
+
+		//表示错误消息
+		console.error('you are error!');
+
+
+		//group打印树状结构，第一个上第一层，第二个是第二层，直到groutEnd结束； grounpCollapsed创建一个新的内联 group
+		console.group("1");
+		console.groupCollapsed('2');
+		console.group('3');
+		console.groupEnd();
+		console.groupCollapsed('3');
+		console.group('4');
+		console.group('5');
+		console.groupEnd();
+
+		//输出一个通知消息，跟log类似
+		console.info(obj1);
+
+		//向web控制台输出一条消息
+		console.log();
+
+		
+
+
+
+
+
+
+
 	</script>
 </body>
 </html>
